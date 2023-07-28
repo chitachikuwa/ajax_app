@@ -16,7 +16,7 @@ default: &default
 
 development:
   <<: *default
-  adapter: mysq12
+  adapter: mysql2
   username: root
   password:
   host: localhost
@@ -27,7 +27,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: mysq12
+  adapter: mysql2
   username: root
   password:
   host: localhost
